@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clove Dental Landing Page</title>
+  <link rel="stylesheet"  href="project.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <header class="top-bar">
+    <img src="clove logo.png" alt="Clove Dental Logo" class="logo" />
+    <div class="cta-group">
+      <button class="btn primary appointment-btn">
+        <img src="Book an appointment.png" alt="Book an appointment" class="appointment" />
+        <span class="appointment-text">Book Appointment</span>
+      </button>
+
+      <div class="phone-wrapper">
+        <img src="Get a Call Back.png" alt="Phone Icon" class="phone-icon" />
+        <span class="phone-number">985-6589-510</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-text">
+        <img class="one" style="padding:10px;" src="Your Smile, Our Priority, At Clove Dental.png"/>
+        <img class="one" style="padding:10px;" src="Expert RCT. Zero Pain. Right Here in Delhi..png"/>
+        <button style="padding:10px;" class="btn primary appointment-btn">
+        <img src="Book an appointment.png" alt="Book an appointment" class="appointment" />
+        <span class="appointment-text">Book Appointment</span>
+      </button>
+      </div>
+      <div class="hero-image">
+        <img src="b1e1ea90f6a139f8e90e48cf2774fbfdafe50435.png" alt="Doctor" />
+      </div>
+    </div>
+
+
+
+    <div class="hero-right">
+      <form class="consultation-form" onsubmit="return redirectToConsultation(event)">
+        <img class="expert" style="height:26px;" src="Get Expert Dental Guidance in Delhi.png"/>
+        <p class="para" style="font-family:Roboto; top:-10px;">Book your free consultation today and take the first step towards healthy, beautiful teeth.</p>
+        <input type="text" style="border-radius:20px;" placeholder="Name" id="name" required />
+        <input type="tel" style="border-radius:20px;" placeholder="Mobile Number" id="mobile" required />
+        <div class="captcha-group">
+          <input type="text" style="border-radius:20px;" placeholder="Captcha" id="captcha" required />
+          <span class="captcha-code" id="captcha-code">1514</span>
+        </div>
+        <label class="checkbox">
+          <input type="checkbox" style="border-radius:20px;" id="terms" required />
+          I agree to CLOVE Dental’s <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+        </label>
+        <button type="submit" style="border-radius:20px; background-color: #f58c22; color: white;" class="btn secondary">Book a Free Consultation</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="stats">
+      <div><img class="img1" src="Pointer01.png"/></div>
+      <div><img class="img1" src="Pointer02.png" /></div>
+      <div><img class="img1" src="Pointer03.png" /></div>
+      <div><img class="img1" src="Pointer04.png" /></div>
+      <div><img class="img1" src="Pointer05.png" /></div>
+      <div><img class="img1" src="Pointer06.png" /></div>
+      <div><img class="img1" src="Pointer07.png" /></div>
+      <div><img class="img1" src="Pointer08.png" /></div>
+    </div>
+  </footer>
+
+  <footer class="footer1">
+        <div class="footer-top">
+            <img src="clove logo.png" alt="Clove Dental Logo" class="footer-logo" />
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of service</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+        <hr style="width:1400px; display:flex; align-self:right;" class="footer-divider" />
+        <div class="footer-bottom">
+            <p>
+                All Rights Reserved - 2024, Clove Dental (a brand name of M/s. SStar Dental Centre Private Limited).
+                Managed By Unbund
+            </p>
+        </div>
+    </footer>
+
+
+
+  <script>
+  function redirectToConsultation(event) {
+    event.preventDefault();
+
+    const captchaInput = document.getElementById('captcha').value;
+    const captchaCode = document.getElementById('captcha-code').textContent;
+
+    if (captchaInput !== captchaCode) {
+      alert('Invalid captcha. Please try again.');
+      return false;
+    }
+    window.location.href = "root-canal.html"; 
+    return true;
+  }
+</script>
+
+</body>
+
+</html>

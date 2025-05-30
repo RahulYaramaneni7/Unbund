@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.root-canal-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-image {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.card-content ul li {
+  margin-bottom: 8px;
+}
+
+.price-label {
+  font-size: 14px;
+  color: #f58c22;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.price {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.consult-btn {
+  display: inline-block;
+  background-color: #f58c22;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.consult-btn:hover {
+  background-color: #e27c14;
+}
+
+/* Responsive: stack image and text on small screens */
+@media (max-width: 768px) {
+  .card-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .card-content ul {
+    padding-left: 0;
+  }
+}
+
+.footer {
+  background-color: #452613;
+  color: #fff;
+  padding: 20px 40px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #f0f0f0;
+}
